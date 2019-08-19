@@ -1,0 +1,169 @@
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class GameTest {
+	
+	@Test
+	void testPlaceRobot() {
+		Game g = new Game();
+		g.setGame();
+		int location = 5;
+		boolean result = g.PlaceRobot(location, "Wst");
+		assertEquals(true, result);
+	}
+	
+	@Test
+	void testMoveRobot()
+	{
+		Game g= new Game();
+		g.setGame();
+		int location = 4;
+		g.PlaceRobot(location, "NORTH");
+		boolean result = g.moveRobot();
+		System.out.println();
+		assertEquals(true, result);
+	}
+	
+	@Test
+	void testTurnRobotLeftOutOfGrid()
+	{
+		/*
+		 * 20 21 22 23 24
+		 * 15 16 17 18 19
+		 * 10 11 12 13 14
+		 * 05 06 07 08 09
+		 * 00 01 02 03 04
+		 */
+		Game g= new Game();
+		g.setGame();
+		int location = 10;
+		g.PlaceRobot(location, "NORTH");
+		g.turnLeft();
+		boolean result = g.moveRobot();
+		//System.out.println(g.getPosition());
+		assertEquals(false, result);
+	}
+	
+	@Test
+	void testMoveRobotRightOfGrid()
+	{
+		/*
+		 * 20 21 22 23 24
+		 * 15 16 17 18 19
+		 * 10 11 12 13 14
+		 * 05 06 07 08 09
+		 * 00 01 02 03 04
+		 */
+		Game g= new Game();
+		g.setGame();
+		int location = 9;
+		g.PlaceRobot(location, "NORTH");
+		g.turnRight();
+		boolean result = g.moveRobot();
+		//System.out.println(g.getPosition());
+		assertEquals(false, result);
+	}
+	
+	@Test
+	void testMoveRobotNorth()
+	{
+		/*
+		 * 20 21 22 23 24
+		 * 15 16 17 18 19
+		 * 10 11 12 13 14
+		 * 05 06 07 08 09
+		 * 00 01 02 03 04
+		 */
+		Game g= new Game();
+		g.setGame();
+		int location = 18;
+		g.PlaceRobot(location, "NORTH");
+		boolean result = g.moveRobot();
+		//System.out.println(g.getPosition());
+		assertEquals(true, result);
+	}
+	
+	@Test
+	void testMoveRobotSouth()
+	{
+		/*
+		 * 20 21 22 23 24
+		 * 15 16 17 18 19
+		 * 10 11 12 13 14
+		 * 05 06 07 08 09
+		 * 00 01 02 03 04
+		 */
+		Game g= new Game();
+		g.setGame();
+		int location = 24;
+		g.PlaceRobot(location, "SOUTH");
+		boolean result = g.moveRobot();
+		//System.out.println(g.getPosition());
+		assertEquals(true, result);
+	}
+	
+	@Test
+	void testTurnLeftFromWestMoveRobot()
+	{
+		/*
+		 * 20 21 22 23 24
+		 * 15 16 17 18 19
+		 * 10 11 12 13 14
+		 * 05 06 07 08 09
+		 * 00 01 02 03 04
+		 */
+		Game g= new Game();
+		g.setGame();
+		int location = 12;
+		g.PlaceRobot(location, "WEST");
+		g.turnLeft();
+		boolean result = g.moveRobot();
+		//System.out.println(g.getPosition());
+		assertEquals(true, result);
+	}
+	
+	@Test
+	void testTurnRightFromWestMoveRobot()
+	{
+		/*
+		 * 20 21 22 23 24
+		 * 15 16 17 18 19
+		 * 10 11 12 13 14
+		 * 05 06 07 08 09
+		 * 00 01 02 03 04
+		 */
+		Game g= new Game();
+		g.setGame();
+		int location = 10;
+		g.PlaceRobot(location, "WEST");
+		g.turnRight();
+		boolean result = g.moveRobot();
+		//System.out.println(g.getPosition());
+		assertEquals(true, result);
+	}
+	
+	@Test
+	void testValidMoveAfterInvalidMove()
+	{
+		/*
+		 * 20 21 22 23 24
+		 * 15 16 17 18 19
+		 * 10 11 12 13 14
+		 * 05 06 07 08 09
+		 * 00 01 02 03 04
+		 */
+		Game g= new Game();
+		g.setGame();
+		int location = 20;
+		g.PlaceRobot(location, "NORTH");
+		g.turnLeft();	//invalid move turn as facing West
+		boolean result1 = g.moveRobot();
+		g.turnRight(); 	//invalid as facing North
+		boolean result2 = g.moveRobot();
+		g.turnRight(); //valid as facing East
+		boolean result3 = g.moveRobot();
+		/*System.out.println("Result 1: "+ result1 + "\nResult 2: " + result2 + "\nResult 3: " + result3 +
+				"\nRobot Position: " + g.getPosition());*/
+	}
+}

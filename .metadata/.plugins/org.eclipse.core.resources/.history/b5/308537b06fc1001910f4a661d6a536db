@@ -1,0 +1,66 @@
+
+public class Game {
+	private int GameBoard [][];
+	private int Robot;
+	private Directions Facing;
+	final int Max = 4;
+	final int Min = 0;
+	
+	public Game()
+	{
+		GameBoard = new int [5][5];
+		Robot = 0;
+		for(int i = 0; i <= Max; i++)
+		{
+			for(int j=0 ; j <= Max; j++)
+			{
+				GameBoard[i][j] = 0;
+			}
+		}
+	}
+	
+	public void setGame()
+	{
+		int position = 0;
+		for(int i=0; i <= Max; i++)
+		{
+			for(int j = 0; j <= Max; j++)
+			{
+				GameBoard[i][j] = position++;
+			}
+		}
+		Robot= 0;
+	}
+	
+	public int getPosition()
+	{
+		return Robot;
+	}
+	
+	public Boolean PlaceRobot(int location, Directions direction)
+	{
+		for(int i = 0; i <= Max; i++)
+		{
+			for(int j = 0; j <= Max; j++)
+			{
+				if(GameBoard[i][j] == location)
+				{
+					//correct location
+					this.Robot[0][0] = location;
+					this.Facing = direction;
+					return true;
+				}
+			}
+		}
+		return false;
+	}
+	
+	public Boolean moveRobot()
+	{
+		if(Facing == Directions.North)
+		{
+			Robot[0][0] +=
+		}
+	}
+	
+}

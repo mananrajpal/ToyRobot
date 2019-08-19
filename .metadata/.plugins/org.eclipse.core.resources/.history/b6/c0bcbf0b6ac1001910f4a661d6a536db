@@ -1,0 +1,61 @@
+
+public class Game {
+	private int GameBoard [][];
+	private Directions Facing;
+	final int MaxX = 4;
+	final int MaxY = 4;
+	final int MinX = 0;
+	final int MinY = 0;
+	
+	public Game()
+	{
+		GameBoard = new int [4][4];
+	}
+	
+	public void setGame()
+	{
+		int position = 0;
+		for(int i=0; i <= MaxX; i++)
+		{
+			for(int j = 0; j <= MaxY; j++)
+			{
+				GameBoard[i][j] = position++;
+			}
+		}
+	}
+	
+	public int[][] getPosition()
+	{
+		return GameBoard;
+	}
+	
+	public void PlaceRobot(int[][] location, Directions direction)
+	{
+		/*for(int i = 0; i <= MaxX; i++)
+		{
+			for(int j=0; j <= MaxY; j++)
+			{
+				if(GameBoard[i][] > 4)
+				{
+					//do nothing
+					return false;
+				}
+				else if(GameBoard[i][j] < 0)
+				{
+					//do nothing
+					return false;
+				}
+			}
+		}
+		if((direction != Directions.East) || (direction != Directions.West) || (direction != Directions.South)||(direction != Directions.North))
+		{
+			//do nothing
+			return false;
+		}
+		this.GameBoard = location;
+		this.Facing = direction;
+		return true;
+		*/
+	}
+	
+}

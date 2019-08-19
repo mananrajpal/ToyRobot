@@ -1,0 +1,9 @@
+
+public class Game {
+	private int GameBoard [][];
+	
+	public Game()
+	{
+		GameBoard = new int [4][4];
+	}
+}

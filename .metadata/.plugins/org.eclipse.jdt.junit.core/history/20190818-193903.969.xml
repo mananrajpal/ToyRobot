@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="GameTest" project="ToyRobot" tests="9" started="9" failures="0" errors="0" ignored="0">
+  <testsuite name="GameTest" time="0.045" uniqueid="[engine:junit-jupiter]/[class:GameTest]">
+    <testcase name="testMoveRobotNorth" classname="GameTest" time="0.022" displayname="testMoveRobotNorth()" uniqueid="[engine:junit-jupiter]/[class:GameTest]/[method:testMoveRobotNorth()]"/>
+    <testcase name="testMoveRobotSouth" classname="GameTest" time="0.003" displayname="testMoveRobotSouth()" uniqueid="[engine:junit-jupiter]/[class:GameTest]/[method:testMoveRobotSouth()]"/>
+    <testcase name="testMoveRobotRightOfGrid" classname="GameTest" time="0.003" displayname="testMoveRobotRightOfGrid()" uniqueid="[engine:junit-jupiter]/[class:GameTest]/[method:testMoveRobotRightOfGrid()]"/>
+    <testcase name="testPlaceRobot" classname="GameTest" time="0.002" displayname="testPlaceRobot()" uniqueid="[engine:junit-jupiter]/[class:GameTest]/[method:testPlaceRobot()]"/>
+    <testcase name="testTurnLeftFromWestMoveRobot" classname="GameTest" time="0.002" displayname="testTurnLeftFromWestMoveRobot()" uniqueid="[engine:junit-jupiter]/[class:GameTest]/[method:testTurnLeftFromWestMoveRobot()]"/>
+    <testcase name="testTurnRightFromWestMoveRobot" classname="GameTest" time="0.001" displayname="testTurnRightFromWestMoveRobot()" uniqueid="[engine:junit-jupiter]/[class:GameTest]/[method:testTurnRightFromWestMoveRobot()]"/>
+    <testcase name="testValidMoveAfterInvalidMove" classname="GameTest" time="0.002" displayname="testValidMoveAfterInvalidMove()" uniqueid="[engine:junit-jupiter]/[class:GameTest]/[method:testValidMoveAfterInvalidMove()]"/>
+    <testcase name="testMoveRobot" classname="GameTest" time="0.001" displayname="testMoveRobot()" uniqueid="[engine:junit-jupiter]/[class:GameTest]/[method:testMoveRobot()]"/>
+    <testcase name="testTurnRobotLeftOutOfGrid" classname="GameTest" time="0.008" displayname="testTurnRobotLeftOutOfGrid()" uniqueid="[engine:junit-jupiter]/[class:GameTest]/[method:testTurnRobotLeftOutOfGrid()]"/>
+  </testsuite>
+</testrun>

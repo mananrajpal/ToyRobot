@@ -1,0 +1,15 @@
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class GameTest {
+	
+	@Test
+	void testPlaceRobot() {
+		Game g = new Game();
+		int location = 8;
+		boolean result = g.PlaceRobot(location, Directions.North);
+		assertEquals(false, result);
+	}
+	
+}

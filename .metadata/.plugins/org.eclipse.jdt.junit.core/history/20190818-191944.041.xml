@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="GameTest" project="ToyRobot" tests="3" started="3" failures="0" errors="0" ignored="0">
+  <testsuite name="GameTest" time="0.024" uniqueid="[engine:junit-jupiter]/[class:GameTest]">
+    <testcase name="testPlaceRobot" classname="GameTest" time="0.012" displayname="testPlaceRobot()" uniqueid="[engine:junit-jupiter]/[class:GameTest]/[method:testPlaceRobot()]"/>
+    <testcase name="testMoveRobot" classname="GameTest" time="0.002" displayname="testMoveRobot()" uniqueid="[engine:junit-jupiter]/[class:GameTest]/[method:testMoveRobot()]"/>
+    <testcase name="testMoveRobotOutOfGrid" classname="GameTest" time="0.01" displayname="testMoveRobotOutOfGrid()" uniqueid="[engine:junit-jupiter]/[class:GameTest]/[method:testMoveRobotOutOfGrid()]"/>
+  </testsuite>
+</testrun>

@@ -1,0 +1,20 @@
+
+public class Game {
+	private int GameBoard [][];
+	private int Location [][];
+	private Directions Facing;
+	
+	public Game()
+	{
+		GameBoard = new int [4][4];
+		this.Location  = new int [0][0];
+		this.Facing = Directions.North;
+	}
+	
+	public void PlaceRobot(int[][] location, String direction)
+	{
+		this.Location = location;
+		this.Direction = direction;
+	}
+	
+}

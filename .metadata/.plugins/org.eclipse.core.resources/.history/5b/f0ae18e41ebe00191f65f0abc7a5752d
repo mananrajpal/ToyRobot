@@ -1,0 +1,14 @@
+
+public class Game {
+	private int GameBoard [][];
+	private int Location [][];
+	private String Direction;
+	
+	public Game(int location, String direction)
+	{
+		GameBoard = new int [4][4];
+		this.Location  = location;
+	}
+	
+	
+}

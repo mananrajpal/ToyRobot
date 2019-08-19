@@ -1,0 +1,48 @@
+
+public class Robot {
+
+	public static void main(String[] args) {
+		
+		boolean firstcommand = false;
+		boolean end = false;
+		Game g1 = new Game();
+		
+		while(end)
+		{
+			String command = System.in.toString();
+			switch(command)
+			{
+			case "MOVE":
+				if(firstcommand == true)
+				{
+					g1.moveRobot();
+				}
+				return;
+			case "LEFT":
+				if(firstcommand == true)
+				{
+					g1.turnLeft();
+				}
+				return;
+			case "RIGHT":
+				if(firstcommand == true)
+				{
+					g1.turnRight();
+				}
+				return;
+			case "REPORT":
+				if(firstcommand == true)
+				{
+					System.out.println(g1.getXY() + " " + g1.getPosition());
+				}
+				return;
+			default:
+				
+				return;
+			}
+		}
+		
+
+	}
+
+}

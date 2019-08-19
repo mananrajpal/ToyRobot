@@ -1,0 +1,13 @@
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class GameTest {
+	
+	Game g = new Game();
+	@Test
+	void testPlaceRobot() {
+		fail("Not yet implemented");
+	}
+
+}

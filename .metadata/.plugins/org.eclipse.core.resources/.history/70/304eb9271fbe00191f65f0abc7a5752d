@@ -1,0 +1,7 @@
+
+public enum Direactions {
+	North,
+	South,
+	East,
+	West
+}
